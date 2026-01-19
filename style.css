@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+header {
+  background: #020617;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  color: #38bdf8;
+}
+
+nav a {
+  margin-right: 15px;
+  color: #e5e7eb;
+  text-decoration: none;
+}
+
+nav button {
+  background: #38bdf8;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 40px;
+}
+
+.hero button {
+  padding: 14px 28px;
+  background: #38bdf8;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.section {
+  padding: 60px 40px;
+}
+
+.dark {
+  background: #020617;
+}
+
+.center {
+  text-align: center;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #020617;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-box {
+  background: #020617;
+  padding: 30px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.modal-box input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+.modal-box button {
+  width: 100%;
+  padding: 10px;
+  background: #38bdf8;
+  border: none;
+}
+
+.hint {
+  font-size: 12px;
+  color: #94a3b8;
+  text-align: center;
+}
+
+/* CHATBOT */
+#chatLauncher {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #38bdf8;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#chatbot {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 300px;
+  background: #020617;
+  border-radius: 10px;
+  display: none;
+}
+
+#chatHeader {
+  background: #38bdf8;
+  padding: 10px;
+  font-weight: bold;
+}
+
+#chatMessages {
+  height: 180px;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+#chatInput {
+  width: 100%;
+  padding: 8px;
+  border: none;
+}
