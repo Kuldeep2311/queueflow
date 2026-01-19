@@ -96,15 +96,28 @@
   © 2026 Queueflow. Technology Services Company.
 </footer>
 
-<!-- AI Chatbot Widget -->
-<div id="chatbot">
-  <div id="chatbot-header">Queueflow AI Assistant</div>
-  <div id="chatbot-messages"></div>
-  <div id="chatbot-input">
-    <input type="text" id="userInput" placeholder="Ask us about services..." />
-    <button onclick="sendMessage()">Send</button>
-  </div>
+<!-- AI Chatbot Widget (simple test) -->
+<div id="chat-widget" style="
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#38bdf8;
+  color:#020617;
+  padding:10px 14px;
+  font-weight:bold;
+  border-radius:12px;
+  cursor:pointer;
+  z-index:9999;
+">
+  💬 Chat with us
 </div>
+
+<script>
+document.getElementById('chat-widget').onclick = function() {
+  alert('Thanks! Our team will contact you soon.');
+};
+</script>
+
 
 <style>
 #chatbot { position: fixed; bottom: 20px; right: 20px; width: 300px; background: #020617; border-radius: 10px; box-shadow: 0 0 20px rgba(0,0,0,0.3); font-family: Arial, sans-serif; }
